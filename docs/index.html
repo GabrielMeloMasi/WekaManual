@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weka Manual</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <p><b>Manual Weka</b></p> 
+    
+ <hr size="6" width="50%" align="left" color="black">
+ <br />
+ <br />
+ <br />
+ <ul id=menu>
+    <li><a href="#Objetivo">Qual o objetivo da ferramenta?</a>
+    <li><a href="#instalar">Como instalar?</a>
+    <li><a href="#ComoUsar">Como usar?</a>
+    
+    </ul>
+ 
+ <div id="Objetivo"><p><b>Qual e o objetivo da ferramenta Weka?</b></p>
+
+O Weka tem como objetivo agregar algoritmos provenientes de diferentes abordagens/paradigmas na sub-área da<br /> 
+inteligência artificial dedicada ao estudo de aprendizagem de máquina.<br /> 
+Essa sub-área pretende desenvolver algoritmos e técnicas que permitam a um computador "aprender"<br /> 
+(no sentido de obter novo conhecimento) quer indutiva quer dedutivamente.<br /> 
+O Weka procede à análise computacional e estatística dos dados fornecidos recorrendo<br /> 
+a técnicas de mineração de dados tentando, indutivamente, a partir dos padrões encontrados gerar <br /> 
+hipóteses para soluções e no extremos inclusive teorias sobre os dados em questão.<br /> 
+</div>
+
+<div id="instalar"></div> <p><b>Como instalar o Weka?</b></p>
+ 
+ Primeiramente Clique no link e faça o <a href="https://sourceforge.net/projects/weka/files/weka-3-8/3.8.4/weka-3-8-4.zip/download?use_mirror=ufpr" target="_blank">Download</a>, em seguida abra o arquivo instalado,<br />
+ o arquivo estara compactado, sendo necessario o <a href="https://www.win-rar.com/start.html?&L=9" target="_blank">Winrar</a>, logo após descompactado <br/>
+clique no arquivo dentro da pasta indicado na imagem logo abaixo:<br/></div>
+<br/>
+<img src="../Manual/imagens/weka.png">
+
+<div id="ComoUsar"><p><b>Como Usar?</b></p>
+<p>1° PASSO </p>
+Primeiramente vamos ver como podemos colocar nossos dados no weka, na realidade e bem simples, primeiro você pega os dados ou cria, vou 
+</br>deixar esse arquivo <a href="https://covid-insumos.saude.gov.br/paineis/insumos/lista_csv_painel.php?output=csv" target="_blank">CSV</a> como exemplo mas podemos fazer com outros demais arquivos. Agora para conseguirmos usar esses dados no weka </br>
+temos que fazer a conversao desse arquivo para o tipo de arquivo que o weka necessita, que é no caso .arff, agora vamos para a conversão,</br>
+primeiramente abra esse arquivo csv com o bloco de notas, cliquando com o botão direito do mouse, abrir com, bloco de notas. Logo depois </br>
+temos que fazer algumas alteraçoes, primeira alteraçao tirar todas aspas ", podemos usar a propria ferramenta do editor de texto, vá em editar, </br>
+substituir selecione todas as aspas e subistitua por em branco "Nada", o arquivo devera ficar sem aspas algumas somente com as virgulas e os dados.</br>
+    Agora temos que fazer algumas declarações, primeira tag de declaraçao <b>@relation</b> usada para definir o nome do arquivo, segunda tag de declaração</br>
+    <b>@attribute</b> usado para definir o nome do atributo, <b>@data</b> para definir todos os dados que serao usados. Seu arquivo devera ficar igual o do exemplo</br>abaixo:</br>
+<img src="../Manual/imagens/covid.png">
+</br>
+Como podemos ver no exemplo não utilizei todos os dados, pois fiz somente para dar uma demonstração, mas se necessario pode ser feito o uso de todos os </br>dados normalmente.
+</br>
+Após ter feito ter feito todas as declarações, vamos salvar o arquivo como o tipo de arquivo que o weka aceita, demonstrarei nas imagens abaixo:
+
+</br>
+<img src="../Manual/imagens/1.png">
+</br></br>
+<hr size="2" width="35%" align="left" color="black">
+<img src="../Manual/imagens/2.png">
+</br>
+Após ter feito todos esses passos, ja podemos usar esses dados no weka agora vamos lá.</br>
+<p>2° PASSO </p>
+Abriremos o weka, iremos em "explorer", apertamos em "Open file", colocamos o tipo de arquivo de busca em .arff e escolhemos o arquivo que criamos e esta tudo pronto.
+</div>
+
+
+   
+
+</body>
+</html>
