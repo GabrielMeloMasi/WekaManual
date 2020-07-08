@@ -18,7 +18,13 @@
     <li><a href="#Objetivo">Qual o objetivo da ferramenta?</a>
     <li><a href="#instalar">Como instalar?</a>
     <li><a href="#ComoUsar">Como usar?</a>
-    
+    <li><a href="#KNN">Anállise KNN</a>
+        <ul>
+            <li><a href="#KNNCMFAZER">Como Fazer?</a></li>
+            <li><a href="#KNNAVALIAR">Como avaliar os resultados?</a></li>
+            <li><a href="#KNNUTILIZAR">Em quais situaçoes podemos utilizar?</a></li>                    
+      </ul>
+
     </ul>
  
  <div id="Objetivo"><p><b>Qual e o objetivo da ferramenta Weka?</b></p>
@@ -66,9 +72,54 @@ Após ter feito todos esses passos, ja podemos usar esses dados no weka agora va
 <p>2° PASSO </p>
 Abriremos o weka, iremos em "explorer", apertamos em "Open file", colocamos o tipo de arquivo de busca em .arff e escolhemos o arquivo que criamos e esta tudo pronto.
 </div>
+</br></br>
+
+<p><b>Anállise KNN</b></p>
+<div id="KNN"></div> <p><b>O que é o KNN?</b></p>
+KNN(K — Nearest Neighbors) é um dos muitos algoritmos ( de aprendizagem supervisionada ) usado no campo de data mining e machine learning, ele é um classificador 
+</br>onde o aprendizado é baseado “no quão similar” é um dado (um vetor) do outro. O treinamento é formado por vetores de n dimensões.
+
+<div id="KNNCMFAZER"></div> <p><b>Como Fazer?</b></p>
+Primeiramente abra a ferramenta Weka, Clique em Explorer, Clique on Open file selecione a pasta onde baixou a ferramenta weka que no meu caso esta na area de trabalho,</br> 
+após isso abra o arquivo mostrado abaixo que iremos usar de exemplo para a explicação:
+</br></br>
+
+<img src="../docs/imagens/KNN2.png">
+</br>
+Abra a pasta data, dentro da pasta data selecione o arquivo mostrado na imagem:
+</br></br>
+<img src="../docs/imagens/KNN3.png">
+</br></br>
+Após aberto o arquivo, vá em classify, clique em choose, vá até a pasta lazy e selecione iBK e pronto,agora e so clicar em start e você ja está utlizando a análise KNN.</br>
+Se quise tambem pode visualizar por imagens apenas cliquando com o botao direito do mouse na onde a imagem indica:
+</br></br>
+<img src="../docs/imagens/KNN5.png">
+</br>
+Agora selecione visualize margin curve que ira le mostrar um grafico com alguns dados.
+</br>
+<div id="KNNAVALIAR"><p><b>Como podemos avaliar os resultados?</b></p>
+Para poder avaliar os resultados priemeiramente temos que saber como funciona o KNN(K Nearest Neighbor)</br>
+Neste algoritmo possuímos uma variável chamada de K, a qual é parte do nome do modelo e também o principal </br>
+parâmetro a ser selecionado. Este parâmetro direcionará a quantidade de vizinhos (neighborn em inglês). Em </br>
+casos de modelos binários, aonde possuímos apenas duas classes, em geral aplicasse valores ímpares a K, mas</br>
+lembre que cada caso é um caso, “No free lunch”. Imagine que temos um valor P1 o qual queremos predizer, </br>
+entre um grupo de duas classes aonde o valor atribuído a K foi 1 (K=1), primeiro iremos identificar o ponto</br>
+mais próximo a ele e depois qual a label que o identifica (classe A por exemplo)</br>
+</br>
+</br>
+<img src="../docs/imagens/exemplo KNN.png"></br>
+
+Após identificar o ponto mais próximo e identificar a label deste ponto (Ex.: Classe A), iremos predizer a </br>
+que classe o ponto P1 faz parte. Para identificar de fato a que grupo o ponto P1 faz parte, iremos realizar </br>
+uma votação aonde a maioria irá dizer a que classe este ponto P1 realmente faz parte.</br>
 
 
-   
+
+
+
+
+
+<div id="KNNUTILIZAR"><p><b>Em quais situações podemos utilizar o KNN?</b></p>
 
 </body>
 </html>
